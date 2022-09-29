@@ -1,0 +1,54 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <h1><font color="darkblue">UNIVERSITAS DIAN NUSWANTORO</font><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Logo_udinus1.jpg/1200px-Logo_udinus1.jpg" style="float:left;width: 140px;px;height:140px;"><br></h1>
+	<hr align="left" width="600px" style="2" size="6" color="orange"></hr>
+        <h2>Form Mahasiswa</h2>
+        <form name="fmhs" action="proses.php" method="post">
+        <table width="50%">
+            <tr>
+                 <td>NIM</td>
+                 <td><input type="number" name="fnim" value="111202214668"></td>
+            </tr>
+            <tr>
+                <td>NAMA</td>
+                <td><input type="text" name="fnama" value="Restu Lestari Mulianingrum"></td>
+            </tr>
+            <tr>
+                <td>PROGRAM STUDI</td>
+                 <td>
+                     <select name="fprodi">
+                         <option value="">Pilih</option>
+                         <option value="a11">S1 - Teknik Informatika</option>
+                         <option value="a12">S1 - Sistem Informasi</option>
+                     </select></td>              
+             </tr>
+             <tr>
+                <td>TANGGAL LAHIR</td>
+                <td><input type="date"></td>
+             </tr>
+             <tr>
+                <td>BIDANG MINAT</td>
+                <td><input name="BIDANG MINAT" type="checkbox" id="BIDANG MINAT" value="Web Developer">Web Developer<br>
+                    <input name="BIDANG MINAT" type="checkbox" id="BIDANG MINAT" value="Mobile Developer" checked>Mobile Developer<br>
+                    <input name="BIDANG MINAT" type="checkbox" id="BIDANG MINAT" value="Data Science">Data Science<br>
+             </tr>
+             <tr>
+                <td>LAMPIRAN SERTIFIKAT</td>
+                <td><input name="LAMPIRAN SERTIFIKAT" type="file"></td>
+                </form>
+             </tr>
+             <tr>
+                 <td></td>
+                 <td><input type="submit"><input type="reset"></td>
+             </tr>
+        </table>
+
+
+    </form>
+</body>
+</html>
