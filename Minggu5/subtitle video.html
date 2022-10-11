@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multimedia - HTML 5</title>
+	</head>
+        <title>video subtitles</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	<body>
+		<h2 align="center">Thomas & Friends</h2>
+		<div class ="container text-center"></div>
+        <video id="myVideo" controls preload="metadata">
+            <source src="media/Kereta Thomas & Friends _ Thomas in the Wild pt1 _ Kereta Api _ Animasi _ dalam bahasa Inggris.mp4" />
+            <track
+              label="Indonesia"
+              kind="subtitles"
+              srclang="id"
+              src="captions/vtt/sintel-in.vtt" />
+            <track
+              label="English"
+              kind="subtitles"
+              srclang="en"
+              src="captions/vtt/sintel-en.vtt" />
+          </video>
+        <p>
+			<button onclick="playVid()" type="button">Play Video</button>
+            <button onclick="pauseVid()" type="button">Pause Video</button>
+            <button onclick="durationVid()" type="button">Duration Video</button>
+            <button onclick="controlOn()" type="button">Controls On</button>
+			<button onclick="controlOff()" type="button">Control Off</button>
+            <button onclick="loopStatus()" type="button">Loop Status</button>
+            <button onclick="loopOn()" type="button">Loop On</button>
+            <button onclick="loopOff()" type="button">Loop Off</button>
+		</p>
+        
+	</body>
+	<script>
+        var vid = document.getElementById("myVideo")
+            function playVid() {
+                vid.play();
+            }
+            function pauseVid() {
+                vid.pause();
+            }
+            function durationVid() {
+                alert(vid.duration);
+            }
+            function controlOn() {
+                vid.controls = true;
+                vid.load();
+            }
+            function controlOff() {
+                vid.controls = false;
+                vid.load();
+            }
+            function loopStatus() {
+                alert(vid.loop);
+            }
+            function loopOn() {
+                vid.loop = true;
+                vid.load();
+            }
+            function loopOff() {
+                vid.loop = false
+                vid.load ();
+            }
+	</script> 
+</html>                       

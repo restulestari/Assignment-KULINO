@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Audio HTML</title>
+    </head>
+    <body>
+        <h1>Nicky Youre, Dazy - Sunroof</h1>
+        <img src="media/sunroof.jpg" width="30%">
+        <audio controls="true" id="myAudio" hidden autoplay loop>
+            <source src="media/Nicky Youre, dazy - Sunroof (Official Music Video)_G5xSLbYMr-I.mp3" type="audio/mpeg">
+            Versi Browser tidak mendukung silakan uprgrade ke versi terbaru
+        </audio>
+        <p>
+			<button onclick="playAudio()" type="button">Play Audio</button>
+            <button onclick="pauseAudio()" type="button">Pause Auido</button>
+            <button onclick="loopStatus()" type="button">Loop Status</button>
+            <button onclick="loopOn()" type="button">Loop On</button>
+            <button onclick="loopOff()" type="button">Loop Off</button>
+            <button onclick="muted()" type="button">Muted</button>
+            <button onclick="unmuted()" type="button">Unmuted</button>
+
+
+		</p>
+        <script>
+            var audio = document.getElementById("myAudio")
+                function playAudio() {
+                    audio.play();
+                }
+                function pauseAudio() {
+                    audio.pause();               
+                }
+                function loopStatus() {
+                    alert(audio.loop);
+                }
+                function loopOn() {
+                    audio.loop = true;
+                    audio.load();
+                }
+                function loopOff() {
+                    audio.loop = false
+                    audio.load ();
+                }
+                function muted() {
+                    audio.muted = true;
+                    audio.load();
+                }
+                function unmuted() {
+                    audio.muted = false;
+                    audio.load();
+                }
+        </script> 
+    </body>
+</html>
