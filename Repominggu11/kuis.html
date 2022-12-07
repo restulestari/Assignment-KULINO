@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello HTML</title>
+    </head>
+
+<body>
+    <h3>Daftar Nama HTMI 2023</h3>
+    <form onsubmit="Add()" action="javascript:void(0);" method="post">
+        <input type="text" placeholder="Inputan Nama" id="namaMhs">
+        <input type="submit" value="+">
+    </form>
+    <div id="counter">
+        Jumlah : 10 mahasiswa
+    </div>
+    <table border="1">
+        <thead>
+            <tr><td>Data Nama HTMI 2023</td></tr>
+        </thead>
+        <tbody id="daftarNama">
+            <tr><td>Toni</td></tr>
+            <tr><td>Tono</td></tr>
+            <tr><td>Tini</td></tr>
+        </tbody>
+    </table>
+    <script>
+        var apl = new function(){
+            this.el = document.getElementById('daftarNama');
+            this.mhs = ['Toni', 'Tono', 'Tini'];
+
+            this.barisAll = function() {
+                vat data = '';
+
+                if (this.mhs.length > 0) {
+                    for (i = 0; i < this.mhs.length; i++) {
+                        data += '<tr>';
+                        data =+ '<td>' + this.mhd [i] + '</td>';
+                        data += '<tr>';
+                    }
+                }
+                this.count(this.mhs.length)
+                return this.el.innerHTML = data;         
+            };
+        }
+        this.cout = function(data) {
+            var el = document.getElementById('counter');
+            if (data) {
+                el.innerHTML = 'Jumlah : ' + data + ' ' + 'Mahasiswa' ;
+            } else {
+                el.innerHTML = 'Data Kosong';
+            }
+            
+        }
+        apl.barisAll();
+    </script>
+     
+</body>
+
+</html>

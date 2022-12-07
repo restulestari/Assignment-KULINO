@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hello Javascript</title>
+	<head>
+        <title>Belajar Javascript</title>
         <script>
-            function hitung (){
-                var form = document.formHitung;
+            function hitung() {
+                var form = document.formatHitung;
                 var x = eval(form.bil1.value);
                 var y = eval(form.bil2.value);
                 var opr = form.opr.value;
 
-                //var z = eval (x+opr+y);
-                if (opr=="+"){
+                if(opr==="+") {
                     var z = x+y;
-                } else if (opr=="-"){
+                } else if (opr==="-") {
                     var z = x-y;
-                } else if (opr=="*"){
+                } else if (opr==="*") {
                     var z = x*y;
-                } else if (opr=="/"){
+                } else if (opr==="/") {
                     var z = x/y;
                 }
-
+                
                 form.hasil.value = z;
-                alert(opt);
-
             }
         </script>
-    </head>
-    <body>
+	</head>
+	<body>
         <h1>Hello Javascript</h1>
-        <form name="formHitung" action="#">
+        <form name="formatHitung" action="#">
             bil 1 <input type="number" name="bil1"><br>
             opr
             <select name="opr">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
-
-            </select>
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select><br>
             bil 2 <input type="number" name="bil2">
             <input type="button" value="=" onclick="hitung()">
             <input type="number" name="hasil" disabled>
         </form>
-    </body>
-</html>
+	</body>
+</html> 
