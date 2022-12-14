@@ -6,21 +6,17 @@
 
 <body>
     <h3>Daftar Nama HTMI 2023</h3>
-    <form onsubmit="Add()" action="javascript:void(0);" method="post">
+    <form onsubmit="apl.addData()" action="javascript:void(0);" method="post">
         <input type="text" placeholder="Inputan Nama" id="namaMhs">
         <input type="submit" value="+">
     </form>
     <div id="counter">
-        Jumlah : 10 mahasiswa
     </div>
     <table border="1">
         <thead>
             <tr><td>Data Nama HTMI 2023</td></tr>
         </thead>
         <tbody id="daftarNama">
-            <tr><td>Toni</td></tr>
-            <tr><td>Tono</td></tr>
-            <tr><td>Tini</td></tr>
         </tbody>
     </table>
     <script>
